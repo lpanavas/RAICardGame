@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #intro {
+    max-width: 800px;
+    margin: 10px;
+    text-align: justify;
+  }
+  
+  #gameContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  #cardPickup {
+    width: 45%;
+    min-height: 400px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  #cardPlace {
+    position: relative; /* Add this to make the positioning of labels relative to this div */
+    width: 45%;
+    min-height: 400px;
+    border: 1px solid black;
+    padding: 10px 10px 50px 10px; /* Increased the bottom padding for the bottom label */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px; 
+    padding-top:50px
+  }
+  
+  #topLabel {
+    position: absolute; /* Use absolute positioning */
+    top: 0; /* Stick to the top edge of the parent div */
+    width: 100%; /* Take full width */
+    text-align: center;
+  }
+  
+  #bottomLabel {
+    position: absolute; /* Use absolute positioning */
+    bottom: 0; /* Stick to the bottom edge of the parent div */
+    width: 100%; /* Take full width */
+    text-align: center;
+  }
+  
+  .card {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #f9f9f9;
+    cursor: move;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #scoreContainer {
+    margin: 20px;
+  }
+  
+  #cardPlace .divider {
+    height: 2px;
+    background: black;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    z-index: 10000;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+  }
+  
+  .popup p {
+    margin-bottom: 20px;
+  }
+  
+  .popup button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background-color: #45a049;
+  }
+  

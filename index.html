@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drag and Drop Demo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="intro">
+      <h1>Welcome to the AI Card Game</h1>
+      <p>
+        In this game, you will explore various applications of facial
+        recognition technology and its level of acceptance. Your task is to
+        arrange the cards in the "Card Placement" area based on their levels of
+        acceptance, from most acceptable to least acceptable.
+      </p>
+      <p>
+        The game includes a set of cards, each representing a specific
+        application of facial recognition technology. Your goal is to identify
+        card combos that are believed to have similar levels of acceptance. Card
+        combos consist of three cards placed together that reflect similar
+        perspectives on AI acceptance.
+      </p>
+      <p>
+        Drag and drop the cards into the "Card Placement" area in the order you
+        think represents their level of acceptance, with the most acceptable at
+        the top and the least acceptable at the bottom. As you place the cards,
+        pay attention to the combos you can create, as they will earn you bonus
+        points!
+      </p>
+      <p>
+        Score points by placing cards correctly and achieving card combos. You
+        will earn 10 points for each correctly placed card and an additional 50
+        points for each achieved card combo. Aim for the highest score possible!
+      </p>
+      <p>
+        Are you ready? Start arranging the cards and explore the different
+        levels of acceptance of facial recognition technology!
+      </p>
+    </div>
+
+    <div id="scoreContainer">
+      <h2>Your Score: <span id="score">0</span></h2>
+    </div>
+
+    <div id="gameContainer">
+      <div id="cardPickup">
+        <!-- Cards will be populated from JavaScript -->
+      </div>
+
+      <div id="cardPlace">
+        <div id="topLabel">Most Acceptable</div>
+        <!-- Dropped cards will appear here -->
+        <div id="bottomLabel">Least Acceptable</div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
